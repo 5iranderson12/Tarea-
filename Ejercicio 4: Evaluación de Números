@@ -1,0 +1,17 @@
+
+// Solicitar al usuario que ingrese un número
+let numeroInput = prompt("Por favor, ingresa un número:");
+
+// Intentar convertir la entrada a un número flotante (para aceptar decimales también)
+let numero = parseFloat(numeroInput);
+
+// Verificar si la entrada es un número válido
+if (isNaN(numero)) {
+    console.log("Por favor, ingresa un número válido.");
+} else if (numero > 0) {
+    console.log("El número es positivo.");
+} else if (numero < 0) {
+    console.log("El número es negativo.");
+} else {
+    console.log("El número es cero.");
+}
