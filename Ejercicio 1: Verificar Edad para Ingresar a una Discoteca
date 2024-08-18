@@ -1,0 +1,15 @@
+
+// Solicitar al usuario su edad
+let edadInput = prompt("Por favor, ingresa tu edad:");
+
+// Intentar convertir la entrada a un número entero
+let edad = parseInt(edadInput);
+
+// Verificar si la entrada es un número y si la edad es válida
+if (isNaN(edad) || edad < 0) {
+    console.log("Por favor, ingresa una edad válida.");
+} else if (edad >= 18) {
+    console.log("Puedes ingresar a la discoteca.");
+} else {
+    console.log("No puedes ingresar a la discoteca.");
+}
