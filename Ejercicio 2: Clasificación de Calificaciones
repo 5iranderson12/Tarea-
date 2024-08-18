@@ -1,0 +1,21 @@
+
+// Solicitar al usuario su calificación
+let calificacionInput = prompt("Por favor, ingresa tu calificación (0-100):");
+
+// Intentar convertir la entrada a un número entero
+let calificacion = parseInt(calificacionInput);
+
+// Verificar si la entrada es un número válido
+if (isNaN(calificacion) || calificacion < 0 || calificacion > 100) {
+    console.log("Por favor, ingresa una calificación válida entre 0 y 100.");
+} else if (calificacion >= 90) {
+    console.log("Tu grado es: A");
+} else if (calificacion >= 80) {
+    console.log("Tu grado es: B");
+} else if (calificacion >= 70) {
+    console.log("Tu grado es: C");
+} else if (calificacion >= 60) {
+    console.log("Tu grado es: D");
+} else {
+    console.log("Tu grado es: F");
+}
